@@ -1,7 +1,6 @@
 //clear(); urls = $$('a'); for(url in urls) console.log( urls[url].href )
 // document.querySelectorAll('a'); for(url in a) console.log( a[url].href )
 
-const puppeteer = require('puppeteer');
 const CDP = require('chrome-remote-interface');
 const chromeLauncher = require('chrome-launcher');
 const request = require('request');
@@ -75,8 +74,6 @@ function initialCleanup() {
   Page.navigate({url: process.argv[2]});
 
   Page.loadEventFired(async () => {
-  
-    const urlAll = "document.querySelectorAll('a')";
 
     const code = "(function() { \
           var links = []; listURLs = document.querySelectorAll('a');\
@@ -88,7 +85,7 @@ function initialCleanup() {
 
     var links = JSON.parse(resultAll.result.value);
 
-    for (it in links.links) {
+    for (var it in links.links) {
       if(validUrl.isUri(links.links[it])) {
         verifyPageUrls(links.links[it]);
       }
