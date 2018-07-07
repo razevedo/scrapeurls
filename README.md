@@ -7,7 +7,7 @@
 5. if some error is found during step 3, info is stored in badURLs.csv file
 
 ## How to use
-URL of the page you want to get the URL list
+Add, as an Argv, the URL of the page you want to get all the URLs
 
 ## How to install and run
 > npm install
