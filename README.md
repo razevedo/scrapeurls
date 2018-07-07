@@ -6,6 +6,11 @@
 4. Store the URL and the title into a csv file (goodURLs.csv)
 5. if some error is found during step 3, info is stored in badURLs.csv file
 
-## Arguments
+## How to use
 URL of the page you want to get the URL list
+
+## How to install and run
+> npm install
+
+> npm start
 
