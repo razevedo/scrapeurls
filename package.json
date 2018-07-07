@@ -1,0 +1,29 @@
+{
+    "name": "scrapeurls",
+    "version": "0.0.1",
+    "description": "Simple scraper to collect and validate all URLs available in a page",
+    "repository": "https://github.com/razevedo/scrapeurls",
+    "private": false,
+    "scripts": {
+      "start": "node scrapeurls.js"
+    },
+    "author": "Mindera",
+    "contributors": [
+      {
+        "name": "Ricardo Azevedo",
+        "email": "ricardo.azevedo@mindera.com"
+      }
+    ],
+    "license": "Apache-2.0" ,
+    "dependencies": {
+        "cheerio": "1.0.0-rc.2",
+        "chrome-launcher": "0.10.2",
+        "chrome-remote-interface": "0.25.7",
+        "puppeteer": "1.5.0",
+        "request": "2.87.0",
+        "valid-url": "1.0.9"   
+    },
+    "engines": {
+        "node": "10.6.x"
+    }
+}
